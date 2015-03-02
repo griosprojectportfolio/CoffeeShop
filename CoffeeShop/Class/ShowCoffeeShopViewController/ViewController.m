@@ -37,12 +37,6 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
-        //Coffee Shop //categoryId=4d4b7105d754a06374d81259
-        //4bf58dd8d48988d1e0931735
-
-        //venues/explore?ll=22.6871948,75.861458&categoryId= 4bf58dd8d48988d1e0931735
-
-
     [self getCurrentLocation];
 
     self.navigationController.navigationBar.translucent = NO;
@@ -164,6 +158,9 @@
     CLLocation *currentLocation1 = newLocation;
     self.latitute = currentLocation1.coordinate.latitude;
     self.longitute = currentLocation1.coordinate.longitude;
+
+    currentLocation.longitude = self.longitute;
+    currentLocation.latitude = self.latitute;
 
     NSLog(@"%f", self.longitute);
 }
@@ -300,6 +297,7 @@
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MapViewController *mapVwController = [storyBoard instantiateViewControllerWithIdentifier:@"MapVC"];
     mapVwController.objLocation = [self.mArryLocation objectAtIndex:indexPath.row];
+    NSLog(@"%f %f", currentLocation.longitude, currentLocation.longitude );
     mapVwController.cordinateCurrentLocation = currentLocation;
     [self.navigationController pushViewController:mapVwController animated:YES];
 }

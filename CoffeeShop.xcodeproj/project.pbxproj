@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4B13C71A8C9F25009E1EAC /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B13C31A8C9F25009E1EAC /* MapView.m */; };
 		0A4B13CF1A8CB8F8009E1EAC /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B13CE1A8CB8F8009E1EAC /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0A7353B31A89ED8D003EE023 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7353B21A89ED8D003EE023 /* LoginViewController.m */; };
+		0A7D43381AA487A50093F3BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D43281AA487A50093F3BE /* AppDelegate.m */; };
+		0A7D43391AA487A50093F3BE /* CustomCoffeeShopInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D432B1AA487A50093F3BE /* CustomCoffeeShopInfoCell.m */; };
+		0A7D433A1AA487A50093F3BE /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D432E1AA487A50093F3BE /* MapView.m */; };
+		0A7D433B1AA487A50093F3BE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D43311AA487A50093F3BE /* LoginViewController.m */; };
+		0A7D433C1AA487A50093F3BE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D43341AA487A50093F3BE /* MapViewController.m */; };
+		0A7D433D1AA487A50093F3BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D43371AA487A50093F3BE /* ViewController.m */; };
 		0AA27F5E1A84BB84006FE17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27F5D1A84BB84006FE17C /* main.m */; };
-		0AA27F611A84BB84006FE17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27F601A84BB84006FE17C /* AppDelegate.m */; };
-		0AA27F641A84BB84006FE17C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27F631A84BB84006FE17C /* ViewController.m */; };
 		0AA27F671A84BB84006FE17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA27F651A84BB84006FE17C /* Main.storyboard */; };
 		0AA27F691A84BB84006FE17C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA27F681A84BB84006FE17C /* Images.xcassets */; };
 		0AA27F6C1A84BB84006FE17C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA27F6A1A84BB84006FE17C /* LaunchScreen.xib */; };
@@ -21,9 +23,7 @@
 		0AA27F891A84BCC9006FE17C /* RequestConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27F871A84BCC9006FE17C /* RequestConnection.m */; };
 		0AA27F8B1A84BE62006FE17C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA27F8A1A84BE62006FE17C /* CoreLocation.framework */; };
 		0AA27FC21A84C0C0006FE17C /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27FC11A84C0C0006FE17C /* LocationInfo.m */; };
-		0AA27FC71A84CABE006FE17C /* CustomCoffeeShopInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27FC61A84CABE006FE17C /* CustomCoffeeShopInfoCell.m */; };
 		0AA27FC91A84DB48006FE17C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA27FC81A84DB48006FE17C /* MapKit.framework */; };
-		0AA27FCD1A84E5E7006FE17C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA27FCC1A84E5E7006FE17C /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A4B13C21A8C9F25009E1EAC /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
-		0A4B13C31A8C9F25009E1EAC /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		0A4B13CD1A8CB8F8009E1EAC /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		0A4B13CE1A8CB8F8009E1EAC /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
-		0A7353B11A89ED8D003EE023 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Class/LoginViewController.h; sourceTree = "<group>"; };
-		0A7353B21A89ED8D003EE023 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Class/LoginViewController.m; sourceTree = "<group>"; };
+		0A7D43271AA487A50093F3BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A7D43281AA487A50093F3BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A7D432A1AA487A50093F3BE /* CustomCoffeeShopInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCoffeeShopInfoCell.h; sourceTree = "<group>"; };
+		0A7D432B1AA487A50093F3BE /* CustomCoffeeShopInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCoffeeShopInfoCell.m; sourceTree = "<group>"; };
+		0A7D432D1AA487A50093F3BE /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		0A7D432E1AA487A50093F3BE /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		0A7D43301AA487A50093F3BE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0A7D43311AA487A50093F3BE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0A7D43331AA487A50093F3BE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0A7D43341AA487A50093F3BE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0A7D43361AA487A50093F3BE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A7D43371AA487A50093F3BE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AA27F581A84BB84006FE17C /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA27F5C1A84BB84006FE17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA27F5D1A84BB84006FE17C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AA27F5F1A84BB84006FE17C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0AA27F601A84BB84006FE17C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AA27F621A84BB84006FE17C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0AA27F631A84BB84006FE17C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AA27F661A84BB84006FE17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA27F681A84BB84006FE17C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0AA27F6B1A84BB84006FE17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -63,11 +67,7 @@
 		0AA27F8A1A84BE62006FE17C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0AA27FC01A84C0C0006FE17C /* LocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationInfo.h; sourceTree = "<group>"; };
 		0AA27FC11A84C0C0006FE17C /* LocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationInfo.m; sourceTree = "<group>"; };
-		0AA27FC51A84CABE006FE17C /* CustomCoffeeShopInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCoffeeShopInfoCell.h; sourceTree = "<group>"; };
-		0AA27FC61A84CABE006FE17C /* CustomCoffeeShopInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCoffeeShopInfoCell.m; sourceTree = "<group>"; };
 		0AA27FC81A84DB48006FE17C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0AA27FCB1A84E5E7006FE17C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		0AA27FCC1A84E5E7006FE17C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,17 +90,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A4B13C11A8C9F25009E1EAC /* GoogleMapView */ = {
-			isa = PBXGroup;
-			children = (
-				0A4B13C21A8C9F25009E1EAC /* MapView.h */,
-				0A4B13C31A8C9F25009E1EAC /* MapView.m */,
-				0A4B13C91A8CA548009E1EAC /* RegexKitLite */,
-			);
-			name = GoogleMapView;
-			path = Class/GoogleMapView;
-			sourceTree = "<group>";
-		};
 		0A4B13C91A8CA548009E1EAC /* RegexKitLite */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +97,74 @@
 				0A4B13CE1A8CB8F8009E1EAC /* RegexKitLite.m */,
 			);
 			name = RegexKitLite;
-			path = ../../RegexKitLite;
+			path = ../RegexKitLite;
+			sourceTree = "<group>";
+		};
+		0A7D43251AA487A50093F3BE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D43261AA487A50093F3BE /* AppDelegate */,
+				0A7D43291AA487A50093F3BE /* CustomCoffeeShopInfoCell */,
+				0A7D432C1AA487A50093F3BE /* GoogleMapView */,
+				0A7D432F1AA487A50093F3BE /* LoginViewController */,
+				0A7D43321AA487A50093F3BE /* MapViewController */,
+				0A7D43351AA487A50093F3BE /* ShowCoffeeShopViewController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0A7D43261AA487A50093F3BE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D43271AA487A50093F3BE /* AppDelegate.h */,
+				0A7D43281AA487A50093F3BE /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0A7D43291AA487A50093F3BE /* CustomCoffeeShopInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D432A1AA487A50093F3BE /* CustomCoffeeShopInfoCell.h */,
+				0A7D432B1AA487A50093F3BE /* CustomCoffeeShopInfoCell.m */,
+			);
+			path = CustomCoffeeShopInfoCell;
+			sourceTree = "<group>";
+		};
+		0A7D432C1AA487A50093F3BE /* GoogleMapView */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D432D1AA487A50093F3BE /* MapView.h */,
+				0A7D432E1AA487A50093F3BE /* MapView.m */,
+			);
+			path = GoogleMapView;
+			sourceTree = "<group>";
+		};
+		0A7D432F1AA487A50093F3BE /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D43301AA487A50093F3BE /* LoginViewController.h */,
+				0A7D43311AA487A50093F3BE /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		0A7D43321AA487A50093F3BE /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D43331AA487A50093F3BE /* MapViewController.h */,
+				0A7D43341AA487A50093F3BE /* MapViewController.m */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		0A7D43351AA487A50093F3BE /* ShowCoffeeShopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D43361AA487A50093F3BE /* ViewController.h */,
+				0A7D43371AA487A50093F3BE /* ViewController.m */,
+			);
+			path = ShowCoffeeShopViewController;
 			sourceTree = "<group>";
 		};
 		0AA27F4F1A84BB84006FE17C = {
@@ -132,18 +188,10 @@
 		0AA27F5A1A84BB84006FE17C /* CoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
-				0AA27F5F1A84BB84006FE17C /* AppDelegate.h */,
-				0AA27F601A84BB84006FE17C /* AppDelegate.m */,
 				0AA27F651A84BB84006FE17C /* Main.storyboard */,
-				0AA27F621A84BB84006FE17C /* ViewController.h */,
-				0AA27F631A84BB84006FE17C /* ViewController.m */,
-				0A7353B11A89ED8D003EE023 /* LoginViewController.h */,
-				0A7353B21A89ED8D003EE023 /* LoginViewController.m */,
+				0A7D43251AA487A50093F3BE /* Class */,
 				0AA27F681A84BB84006FE17C /* Images.xcassets */,
 				0AA27F6A1A84BB84006FE17C /* LaunchScreen.xib */,
-				0A4B13C11A8C9F25009E1EAC /* GoogleMapView */,
-				0AA27FCA1A84E5C8006FE17C /* MapViewController */,
-				0AA27FC41A84CA98006FE17C /* CustomCoffeeShopInfoCell */,
 				0AA27FBE1A84C0C0006FE17C /* ModelClass */,
 				0AA27F811A84BCC9006FE17C /* Utility */,
 				0AA27FC31A84C628006FE17C /* Framework */,
@@ -181,6 +229,7 @@
 		0AA27F811A84BCC9006FE17C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0A4B13C91A8CA548009E1EAC /* RegexKitLite */,
 				0AA27F821A84BCC9006FE17C /* Reachability */,
 				0AA27F851A84BCC9006FE17C /* Requestonnection */,
 			);
@@ -230,26 +279,6 @@
 			);
 			name = Framework;
 			path = Utility/Requestonnection;
-			sourceTree = "<group>";
-		};
-		0AA27FC41A84CA98006FE17C /* CustomCoffeeShopInfoCell */ = {
-			isa = PBXGroup;
-			children = (
-				0AA27FC51A84CABE006FE17C /* CustomCoffeeShopInfoCell.h */,
-				0AA27FC61A84CABE006FE17C /* CustomCoffeeShopInfoCell.m */,
-			);
-			name = CustomCoffeeShopInfoCell;
-			path = Class/CustomCoffeeShopInfoCell;
-			sourceTree = "<group>";
-		};
-		0AA27FCA1A84E5C8006FE17C /* MapViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0AA27FCB1A84E5E7006FE17C /* MapViewController.h */,
-				0AA27FCC1A84E5E7006FE17C /* MapViewController.m */,
-			);
-			name = MapViewController;
-			path = Class/MapViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,17 +381,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7D433D1AA487A50093F3BE /* ViewController.m in Sources */,
 				0AA27FC21A84C0C0006FE17C /* LocationInfo.m in Sources */,
-				0AA27F641A84BB84006FE17C /* ViewController.m in Sources */,
-				0AA27F611A84BB84006FE17C /* AppDelegate.m in Sources */,
 				0A4B13CF1A8CB8F8009E1EAC /* RegexKitLite.m in Sources */,
-				0AA27FCD1A84E5E7006FE17C /* MapViewController.m in Sources */,
+				0A7D433A1AA487A50093F3BE /* MapView.m in Sources */,
+				0A7D43381AA487A50093F3BE /* AppDelegate.m in Sources */,
 				0AA27F891A84BCC9006FE17C /* RequestConnection.m in Sources */,
-				0A7353B31A89ED8D003EE023 /* LoginViewController.m in Sources */,
-				0AA27FC71A84CABE006FE17C /* CustomCoffeeShopInfoCell.m in Sources */,
+				0A7D433C1AA487A50093F3BE /* MapViewController.m in Sources */,
 				0AA27F881A84BCC9006FE17C /* Reachability.m in Sources */,
+				0A7D433B1AA487A50093F3BE /* LoginViewController.m in Sources */,
 				0AA27F5E1A84BB84006FE17C /* main.m in Sources */,
-				0A4B13C71A8C9F25009E1EAC /* MapView.m in Sources */,
+				0A7D43391AA487A50093F3BE /* CustomCoffeeShopInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

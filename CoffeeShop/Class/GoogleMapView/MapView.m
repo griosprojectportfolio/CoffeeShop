@@ -182,10 +182,15 @@
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
-	[self updateRouteView];
+    [self updateRouteView];
 	routeView.hidden = NO;
 	[routeView setNeedsDisplay];
 }
+
+- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
+
+}
+
 
 - (void)dealloc {
 	mapView  = nil;

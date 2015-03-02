@@ -50,6 +50,7 @@
                          CGRectMake(0, 50, self.view.frame.size.width, self.mapVw.frame.size.height)];
 
         [self.view addSubview:googleMapView];
+        NSLog(@"%f %f %f %f",self.cordinateCurrentLocation.latitude, self.cordinateCurrentLocation.longitude, coordinate2d.latitude, coordinate2d.longitude);
         [googleMapView showRouteFrom:self.cordinateCurrentLocation to:coordinate2d];
     } else {
         [googleMapView setHidden:NO];
